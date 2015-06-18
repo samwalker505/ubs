@@ -24,11 +24,18 @@ ubsApp.config(function($stateProvider, $urlRouterProvider) {
 	$stateProvider
 		.state('login', {
 			url: '/login',
-			templateUrl: 'views/login.html'
+			templateUrl: 'partials/login.html'
 		})
 		.state('main', {
 			url:'/main',
-			templateUrl: 'views/main.html'
+			templateUrl: 'partials/main.html'
 		});
 
 });
+
+ubsApp.controller('ubsCtrl', function($scope, $ionicNavBarDelegate){
+	$scope.showSideMenusToggle = false;
+})
+
+
+
