@@ -19,16 +19,30 @@ ubsApp.run(function($ionicPlatform) {
 });
 
 ubsApp.config(function($stateProvider, $urlRouterProvider) {
-	$urlRouterProvider.otherwise('/login');
+	$urlRouterProvider.otherwise('/app/login');
 
 	$stateProvider
-		.state('login', {
-			url: '/login',
-			templateUrl: 'partials/login.html'
+		.state('app', {
+			url:"/app",
+			abstract: true,
+			templateUrl:'partials/template.html'
 		})
-		.state('main', {
+		.state('app.login', {
+			url: '/login',
+			views: {
+				'mainContent': {
+					templateUrl: 'partials/login.html',
+					controller: 'ubsCtrl'
+				}
+			}
+		})
+		.state('app.main', {
 			url:'/main',
-			templateUrl: 'partials/main.html'
+			views: {
+				'mainContent': {
+					templateUrl: 'partials/main.html'
+				}
+			}
 		});
 
 });
