@@ -1,0 +1,15 @@
+#main .img-news {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-right: auto;
+  margin-left: auto; }
+#main .stock-info-group {
+  height: auto; }
+  #main .stock-info-group .stock-price h1 {
+    float: left; }
+  #main .stock-info-group .stock-diff {
+    float: left;
+    margin-top: 20px; }
+
+/*# sourceMappingURL=app.css.map */

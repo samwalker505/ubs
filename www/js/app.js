@@ -31,8 +31,7 @@ ubsApp.config(function($stateProvider, $urlRouterProvider) {
 			url: '/login',
 			views: {
 				'mainContent': {
-					templateUrl: 'partials/login.html',
-					controller: 'ubsCtrl'
+					templateUrl: 'partials/login.html'
 				}
 			}
 		})
@@ -40,15 +39,18 @@ ubsApp.config(function($stateProvider, $urlRouterProvider) {
 			url:'/main',
 			views: {
 				'mainContent': {
-					templateUrl: 'partials/main.html'
+					templateUrl: 'partials/main.html',
+					controller: 'mainCtrl'
 				}
 			}
 		});
 
 });
 
-ubsApp.controller('ubsCtrl', function($scope, $ionicNavBarDelegate){
-	$scope.showSideMenusToggle = false;
+ubsApp.controller('mainCtrl', function($scope, $ionicNavBarDelegate){
+	$scope.onSwipe = function() {
+		console.log("hjkjhgfghjkjhg");
+	}
 })
 
 

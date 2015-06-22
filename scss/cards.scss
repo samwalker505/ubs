@@ -1,0 +1,24 @@
+#main {
+  .img-news {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .stock-info-group {
+
+    height: auto;
+    .stock-price {
+      h1 {
+
+        float: left;
+      }
+    }
+    .stock-diff {
+      float: left;
+      margin-top: 20px;
+    }
+  }
+
+}
