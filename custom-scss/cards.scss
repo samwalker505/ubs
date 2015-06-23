@@ -7,7 +7,7 @@
     margin-left: auto;
   }
   .stock-info-group {
-
+    overflow: auto;
     height: auto;
     .stock-price {
       h1 {
@@ -28,6 +28,12 @@
       margin-left: 8px;
     }
 
+  }
+  .stock-btn-bar {
+    padding: 10px;
+  }
+
+  .volume {
   }
 
 }

@@ -5,6 +5,7 @@
   margin-right: auto;
   margin-left: auto; }
 #main .stock-info-group {
+  overflow: auto;
   height: auto; }
   #main .stock-info-group .stock-price h1 {
     float: left; }
@@ -17,5 +18,7 @@
     color: #add764;
     margin-top: 10px;
     margin-left: 8px; }
+#main .stock-btn-bar {
+  padding: 10px; }
 
 /*# sourceMappingURL=cards.css.map */
