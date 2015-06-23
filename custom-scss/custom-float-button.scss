@@ -1,0 +1,9 @@
+$main-color: #4991EF;
+$labels-font-size: 34px;
+@import "../www/lib/ng-mfb/mfb/src/mfb";
+
+.mfb-component__wrap {
+  .icon {
+    font-size: 28px;
+  }
+}
