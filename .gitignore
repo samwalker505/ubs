@@ -1,5 +1,12 @@
 # Created by https://www.gitignore.io
 
+### Bower ###
+bower_components
+.bower-cache
+.bower-registry
+.bower-tmp
+
+
 ### PhpStorm ###
 # Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm
 
@@ -47,10 +54,4 @@ atlassian-ide-plugin.xml
 com_crashlytics_export_strings.xml
 crashlytics.properties
 crashlytics-build.properties
-
-### Bower ###
-bower_components
-.bower-cache
-.bower-registry
-.bower-tmp
 
