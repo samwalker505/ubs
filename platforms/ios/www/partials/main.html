@@ -1,0 +1,54 @@
+<ion-view title="Welcome Back" id="main">
+	<ion-nav-buttons side="left">
+		<button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+		</button>
+	</ion-nav-buttons>
+	<a ng-href="tel:+1-1800-555-5555" mfb-menu position="br"  active-icon="icon ion-person-stalker" resting-icon="icon ion-person-stalker">
+		<!-- this will be displayed on the bottom-right corner of the screen -->
+		<!--<button mfb-button icon="paper-airplane" label="menu item"></button>-->
+	</a>
+
+	<ion-content class="padding" padding="true">
+		<!--<h1>Hi, you are back</h1>-->
+		<div class="card" on-swipe-down="onSwipe()">
+			<div class="item item-divider">
+				News - Eurogroup Chief Sees Chance to Get Deal on Greece This Week
+			</div>
+			<div class="item item-text-wrap">
+				<img src="../img/news.jpg" alt="" class="img-news"/>
+				<p>
+					Dutch Finance Minister Jeroen Dijsselbloem, who chairs meetings of his euro-area counterparts, said a new set of proposals submitted by the Greek government formed the basis for a potential deal to end a standoff over aid.
+				</p>
+			</div>
+		</div>
+		<div class="card" on-swipe-down="onSwipe()">
+			<div class="item item-divider">
+				My Stock - URS 21.81 +0.39 (+1.82%)
+			</div>
+			<div class="item item-text-wrap">
+				<div>
+					<strong>URS Group AG (URS)</strong>
+				</div>
+				<div class="stock-info-group">
+					<div class="stock-price">
+						<h1>21.81</h1>
+					</div>
+					<div class="stock-diff">
+						+0.39
+					</div>
+					<div class="icon ion-arrow-graph-up-right"></div>
+				</div>
+			</div>
+
+			<label class="item item-input">
+				<input type="number" placeholder="Quantity (lot)">
+			</label>
+
+			<div class="button-bar stock-btn-bar">
+
+				<a class="button  button-balanced">Buy</a>
+				<a class="button  button-energized">Sell</a>
+			</div>
+		</div>
+	</ion-content>
+</ion-view>

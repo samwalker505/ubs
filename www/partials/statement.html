@@ -1,0 +1,21 @@
+<ion-view title="Statement">
+	<ion-nav-buttons side="left">
+		<button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+		</button>
+	</ion-nav-buttons>
+
+	<ul mfb-menu position="br"  active-icon="icon ion-person-stalker" resting-icon="icon ion-person-stalker">
+	</ul>
+	<ion-content>
+		<div class="list" on-swipe-down="onSwipe()">
+			<div class="item item-divider">
+
+				<h2>Account: 502-345678-956</h2>
+				Balance: $30, 000
+			</div>
+			<div class="item" ng-repeat="month in months">
+				{{month}}
+			</div>
+		</div>
+	</ion-content>
+</ion-view>

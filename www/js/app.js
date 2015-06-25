@@ -43,14 +43,24 @@ ubsApp.config(function($stateProvider, $urlRouterProvider) {
 					controller: 'mainCtrl'
 				}
 			}
+		})
+		.state('app.statement', {
+			url:'/statement',
+			views: {
+				'mainContent': {
+					templateUrl: 'partials/statement.html',
+					controller: 'mainCtrl'
+				}
+			}
 		});
 
 });
 
 ubsApp.controller('mainCtrl', function($scope, $ionicNavBarDelegate){
-	$scope.onSwipe = function() {
-		console.log("hjkjhgfghjkjhg");
-	}
+
+	$scope.months = ['January', 'February', 'March', 'April', 'May',
+		'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+
 })
 
 
