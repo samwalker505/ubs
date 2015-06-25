@@ -7,15 +7,15 @@
 	<ul mfb-menu position="br"  active-icon="icon ion-person-stalker" resting-icon="icon ion-person-stalker">
 	</ul>
 	<ion-content>
-		<div class="list" on-swipe-down="onSwipe()">
-			<div class="item item-divider">
-
+		<ion-list on-swipe-down="onSwipe()">
+			<ion-item class="item-divider">
 				<h2>Account: 502-345678-956</h2>
 				Balance: $30, 000
-			</div>
-			<div class="item" ng-repeat="month in months">
+			</ion-item>
+			<ion-item ng-repeat="month in months" href="#/app/statement-details">
 				{{month}}
-			</div>
-		</div>
+				<i class="ion-chevron-right pull-right"></i>
+			</ion-item>
+		</ion-list>
 	</ion-content>
 </ion-view>

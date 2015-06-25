@@ -1,0 +1,19 @@
+{
+	"statements": [
+		{
+			"title": "ABC Restaurant dinner",
+			"withdrawal": "$300",
+			"date":"2015-06-25"
+		},
+		{
+			"title": "Salary",
+			"deposit": "$15,000",
+			"date":"2015-07-02"
+		},
+		{
+			"title": "Flight ticket",
+			"withdrawal": "$2,000",
+			"date":"2015-07-03"
+		}
+	] 
+}

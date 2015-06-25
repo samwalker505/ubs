@@ -693,4 +693,18 @@
 .mfb-component__wrap .icon {
   font-size: 28px; }
 
+#statement-details .row {
+  padding: 10px; }
+  #statement-details .row .sm-title-date {
+    float: left; }
+  #statement-details .row .value {
+    float: left; }
+    #statement-details .row .value .withdrawal {
+      color: red; }
+    #statement-details .row .value .deposit {
+      color: green; }
+
+.pull-right {
+  float: right; }
+
 /*# sourceMappingURL=app.css.map */

@@ -1,0 +1,44 @@
+<ion-view title="Expanses" id="statement-details">
+	<ion-nav-buttons side="left">
+		<button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+		</button>
+	</ion-nav-buttons>
+
+	<ul mfb-menu position="br"  active-icon="icon ion-person-stalker" resting-icon="icon ion-person-stalker">
+	</ul>
+	<ion-content>
+		<div class="list" on-swipe-down="onSwipe()">
+			<div class="item row"  ng-repeat="sm in statements">
+				<div class="sm-title-date col-67">
+					<div class="statement-title">
+						<h2>{{sm.title}}</h2>
+					</div>
+					<div class="statement-date">
+						{{sm.date}}
+					</div>
+				</div>
+				<div class="value col-center">
+					<div class="withdrawal" ng-show="sm.withdrawal"><span>- </span>{{sm.withdrawal}}</div>
+					<div class="deposit" ng-show="sm.deposit" ><span>+ </span>{{sm.deposit}}</div>
+				</div>
+			</div>
+			<div class="item row">
+				<div class="sm-title-date col-67 col-center">
+					<div class="statement-title">
+						<strong>Total: </strong>
+					</div>
+				</div>
+				<div class="value col-center">
+					<div class="total">
+						<span>&nbsp;&nbsp;</span>
+						<strong>
+							$30,000
+						</strong>
+					</div>
+					<!--<div class="withdrawal" ng-show="sm.withdrawal"><span>- </span>{{sm.withdrawal}}</div>-->
+					<!--<div class="deposit" ng-show="sm.deposit" ><span>+ </span>{{sm.deposit}}</div>-->
+				</div>
+			</div>
+		</div>
+	</ion-content>
+</ion-view>

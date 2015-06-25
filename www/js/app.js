@@ -52,15 +52,27 @@ ubsApp.config(function($stateProvider, $urlRouterProvider) {
 					controller: 'mainCtrl'
 				}
 			}
+		})
+		.state('app.statement-details', {
+			url:'/statement-details',
+			views: {
+				'mainContent': {
+					templateUrl: 'partials/statement-details.html',
+					controller: 'mainCtrl'
+				}
+			}
 		});
 
 });
 
-ubsApp.controller('mainCtrl', function($scope, $ionicNavBarDelegate){
+ubsApp.controller('mainCtrl', function($http, $scope, $ionicNavBarDelegate){
 
 	$scope.months = ['January', 'February', 'March', 'April', 'May',
 		'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 
+	$http.get('statement.json').success(function(data){
+		$scope.statements = data.statements;
+	})
 })
 
 

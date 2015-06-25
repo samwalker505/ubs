@@ -1,0 +1,18 @@
+#statement-details {
+  .row {
+    padding: 10px;
+    .sm-title-date {
+      float: left;
+    }
+    .value {
+      float: left;
+      .withdrawal {
+        color: red;
+      }
+      .deposit {
+        color: green;
+      }
+    }
+  }
+
+}
