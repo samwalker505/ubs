@@ -1,0 +1,7 @@
+{
+  "name": "UBS ionic demo",
+  "description": "A simple Ionic app for UBS case comp",
+  "repository": "https://github.com/samwalker505/ubs",
+  "logo": "http://www.crans-montana.ch/img_up/PHOTO_PR/ec4ed0000985de90fb678ed1b442eb71.ubs.jpg",
+  "keywords": ["ionic", "case comp", "ubs"]
+}
