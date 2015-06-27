@@ -1,8 +1,13 @@
 @import "cards";
 @import "custom-float-button";
+@import "customer-service";
 @import "transaction";
 @import "sm";
 
 .pull-right {
   float: right;
+}
+
+.white-icon {
+  color: #ffffff;
 }

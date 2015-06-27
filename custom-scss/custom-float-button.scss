@@ -1,9 +1,24 @@
-$main-color: #4991EF;
-$labels-font-size: 34px;
-@import "../www/lib/ng-mfb/mfb/src/mfb";
-
-.mfb-component__wrap {
-  .icon {
-    font-size: 28px;
+$float-btn-size: 72px;
+.float-btn {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 1000;
+  .float-btn-icon-grp {
+    position: relative;
+    width: $float-btn-size;
+    height: $float-btn-size;
+    .base {
+      position: absolute;
+      color: #007aff;
+      font-size: $float-btn-size;
+    }
+    .front {
+      font-size: 36px;
+      position: absolute;
+      color: #ffffff;
+      bottom: 16px;
+      right: 27px;
+    }
   }
 }

@@ -70,6 +70,15 @@ ubsApp.config(function($stateProvider, $urlRouterProvider) {
 					controller: 'mainCtrl'
 				}
 			}
+		})
+		.state('app.customer-service', {
+			url:'/customer-service',
+			views: {
+				'mainContent': {
+					templateUrl: 'partials/customer-service.html',
+					controller: 'mainCtrl'
+				}
+			}
 		});
 
 });
@@ -112,6 +121,10 @@ ubsApp.controller('mainCtrl', function($http, $scope, $state, $ionicPopup){
 			console.log('Tapped!', res);
 		});
 	};
+
+	$scope.clicked = function() {
+		$state.go('app.customer-service');
+	}
 })
 
 
