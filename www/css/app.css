@@ -693,6 +693,29 @@
 .mfb-component__wrap .icon {
   font-size: 28px; }
 
+#transaction .outer {
+  display: table;
+  position: absolute;
+  height: 100%;
+  width: 100%; }
+#transaction .middle {
+  display: table-cell;
+  vertical-align: middle; }
+#transaction .inner {
+  margin-left: auto;
+  margin-right: auto;
+  width: 370px; }
+#transaction .scroll {
+  height: 100%; }
+#transaction #transaction-content .success {
+  font-size: 200px;
+  color: green;
+  text-align: center; }
+#transaction #transaction-content .description {
+  margin-top: 20px;
+  font-size: 36px;
+  text-align: center; }
+
 #statement-details .row {
   padding: 10px; }
   #statement-details .row .sm-title-date {

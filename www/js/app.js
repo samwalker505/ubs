@@ -61,11 +61,20 @@ ubsApp.config(function($stateProvider, $urlRouterProvider) {
 					controller: 'mainCtrl'
 				}
 			}
+		})
+		.state('app.transaction', {
+			url:'/transaction',
+			views: {
+				'mainContent': {
+					templateUrl: 'partials/transaction.html',
+					controller: 'mainCtrl'
+				}
+			}
 		});
 
 });
 
-ubsApp.controller('mainCtrl', function($http, $scope, $ionicNavBarDelegate){
+ubsApp.controller('mainCtrl', function($http, $scope, $state, $ionicPopup){
 
 	$scope.months = ['January', 'February', 'March', 'April', 'May',
 		'June', 'July', 'August', 'September', 'October', 'November', 'December'];
@@ -73,6 +82,36 @@ ubsApp.controller('mainCtrl', function($http, $scope, $ionicNavBarDelegate){
 	$http.get('statement.json').success(function(data){
 		$scope.statements = data.statements;
 	})
+
+	$scope.showPopup = function(name) {
+			$scope.data = {}
+
+		// An elaborate, custom popup
+		var myPopup = $ionicPopup.show({
+			template: '<input type="password" ng-model="data.wifi">',
+			title: 'Enter PIN password',
+			subTitle: 'To confrim '+name+' Please enter PIN from token',
+			scope: $scope,
+			buttons: [
+				{ text: 'Cancel' },
+				{
+					text: '<b>'+name+'</b>',
+					type: 'button-positive',
+					onTap: function(e) {
+						if (!$scope.data.wifi) {
+							//don't allow the user to close unless he enters wifi password
+							e.preventDefault();
+						} else {
+							$state.go('app.transaction');
+						}
+					}
+				}
+			]
+		});
+		myPopup.then(function(res) {
+			console.log('Tapped!', res);
+		});
+	};
 })
 
 
