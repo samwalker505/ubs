@@ -1,3 +1,4 @@
+@import "color";
 $float-btn-size: 72px;
 .float-btn {
   position: absolute;
@@ -10,7 +11,7 @@ $float-btn-size: 72px;
     height: $float-btn-size;
     .base {
       position: absolute;
-      color: #007aff;
+      color: $navy-blue;
       font-size: $float-btn-size;
     }
     .front {

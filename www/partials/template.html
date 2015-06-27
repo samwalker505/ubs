@@ -2,7 +2,7 @@
 	<!-- Center content -->
 	<ion-side-menu-content>
 		<!-- Main content, usually <ion-nav-view> -->
-		<ion-nav-bar class="bar-positive">
+		<ion-nav-bar class="bg-navy-blue bar-positive">
 		</ion-nav-bar>
 		<ion-nav-view name="mainContent">
 			<a class="float-btn" href="#/app/customer-service">
@@ -16,13 +16,13 @@
 
 	<!-- Left menu -->
 	<ion-side-menu side="left">
-		<ion-header-bar class="bar-positive">
-			<!--<h1 class="title"></h1>-->
+		<ion-header-bar class="bg-navy-blue bar-positive">
+			<h1 class="title">Menus</h1>
 		</ion-header-bar>
 		<ion-content>
 			<ion-list>
-				<ion-item menu-close>
-					Home
+				<ion-item menu-close href="#/app/main">
+					News
 				</ion-item>
 				<ion-item menu-close href="#/app/search">
 					Stock
@@ -30,13 +30,13 @@
 				<ion-item menu-close href="#/app/statement">
 					Statement
 				</ion-item>
-				<ion-item menu-close href="#/app/playlists">
+				<ion-item menu-close href="#/app/location">
 					Location
 				</ion-item>
-				<ion-item menu-close href="#/app/playlists">
+				<ion-item menu-close href="#/app/customer-service">
 					Contact Us
 				</ion-item>
-				<ion-item menu-close href="#/app/playlists">
+				<ion-item menu-close href="#/app/login">
 					Logout
 				</ion-item>
 			</ion-list>

@@ -3,11 +3,15 @@
 @import "customer-service";
 @import "transaction";
 @import "sm";
-
+@import "color";
 .pull-right {
   float: right;
 }
 
 .white-icon {
   color: #ffffff;
+}
+
+.bg-navy-blue {
+  background-color: $navy-blue !important;
 }

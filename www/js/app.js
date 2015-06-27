@@ -105,7 +105,7 @@ ubsApp.controller('mainCtrl', function($http, $scope, $state, $ionicPopup){
 				{ text: 'Cancel' },
 				{
 					text: '<b>'+name+'</b>',
-					type: 'button-positive',
+					type: 'bg-navy-blue button-positive',
 					onTap: function(e) {
 						if (!$scope.data.wifi) {
 							//don't allow the user to close unless he enters wifi password
