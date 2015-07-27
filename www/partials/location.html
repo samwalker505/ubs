@@ -1,11 +1,17 @@
-<ion-view title="Stock" id="main">
+<ion-view title="Location" id="main">
 	<ion-nav-buttons side="left">
 		<button class="button button-icon button-clear ion-navicon" menu-toggle="left">
 		</button>
 	</ion-nav-buttons>
 
-	<ion-content  data-tap-disabled="true">
+	<ion-content >
 		<!--<h1>Hi, you are back</h1>-->
-		<map center="-34.397, 150.644" zoom="8"></map>
+		<map center="22.2849, 114.1589" zoom="13" style="height: 1000px">
+			<marker position="22.279657, 114.160445" title="Central"></marker>
+			<marker position="22.279657, 114.160445" title="Tsim Sha Tsui"></marker>
+			<marker position="22.298074, 114.176942" title="Tsim Sha Tsui (East)"></marker>
+			<marker position="22.318281, 114.168615" title="Mong Kok"></marker>
+		</map>
+
 	</ion-content>
 </ion-view>
