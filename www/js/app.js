@@ -35,6 +35,14 @@ ubsApp.config(function($stateProvider, $urlRouterProvider) {
 				}
 			}
 		})
+		.state('app.location', {
+			url: '/location',
+			views: {
+				'mainContent': {
+					templateUrl: 'partials/location.html'
+				}
+			}
+		})
 		.state('app.main', {
 			url:'/main',
 			views: {
