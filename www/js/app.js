@@ -79,6 +79,15 @@ ubsApp.config(function($stateProvider, $urlRouterProvider) {
 					controller: 'mainCtrl'
 				}
 			}
+		})
+		.state('app.stock', {
+			url:'/stock',
+			views: {
+				'mainContent': {
+					templateUrl: 'partials/stock.html',
+					controller: 'mainCtrl'
+				}
+			}
 		});
 
 });

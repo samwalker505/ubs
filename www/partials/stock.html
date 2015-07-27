@@ -1,0 +1,69 @@
+<ion-view title="Stock" id="main">
+	<ion-nav-buttons side="left">
+		<button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+		</button>
+	</ion-nav-buttons>
+
+
+	<ion-content class="padding" padding="true">
+		<!--<h1>Hi, you are back</h1>-->
+		<div class="card" on-swipe-down="onSwipe()">
+			<div class="item item-divider">
+				My Stock - HDSC 19.00 -1.00 (-5.00%)
+			</div>
+			<div class="item item-text-wrap">
+				<div>
+					<strong>HDSC Limited</strong>
+				</div>
+				<div class="stock-info-group">
+					<div class="stock-price">
+						<h1>19.00</h1>
+					</div>
+					<div class="stock-diff">
+						-1.00
+					</div>
+					<div class="red icon ion-arrow-graph-down-right" style="color: red"></div>
+				</div>
+			</div>
+
+			<label class="item item-input">
+				<input type="number" placeholder="Quantity (lot)">
+			</label>
+
+			<div class="button-bar stock-btn-bar">
+
+				<a class="button  button-balanced" ng-click="showPopup('Buy')">Buy</a>
+				<a class="button  button-energized" ng-click="showPopup('Sell')">Sell</a>
+			</div>
+		</div>
+		<div class="card" on-swipe-down="onSwipe()">
+			<div class="item item-divider">
+				My Stock - URS 21.81 +0.39 (+1.82%)
+			</div>
+			<div class="item item-text-wrap">
+				<div>
+					<strong>URS Group AG (URS)</strong>
+				</div>
+				<div class="stock-info-group">
+					<div class="stock-price">
+						<h1>21.81</h1>
+					</div>
+					<div class="stock-diff">
+						+0.39
+					</div>
+					<div class="icon ion-arrow-graph-up-right"></div>
+				</div>
+			</div>
+
+			<label class="item item-input">
+				<input type="number" placeholder="Quantity (lot)">
+			</label>
+
+			<div class="button-bar stock-btn-bar">
+
+				<a class="button  button-balanced" ng-click="showPopup('Buy')">Buy</a>
+				<a class="button  button-energized" ng-click="showPopup('Sell')">Sell</a>
+			</div>
+		</div>
+	</ion-content>
+</ion-view>

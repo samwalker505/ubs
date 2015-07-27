@@ -23,8 +23,8 @@
 
 .float-btn {
   position: absolute;
-  bottom: 0;
-  right: 0;
+  bottom: 10px;
+  right: 10px;
   z-index: 1000; }
   .float-btn .float-btn-icon-grp {
     position: relative;
@@ -77,6 +77,9 @@
       color: red; }
     #statement-details .row .value .deposit {
       color: green; }
+
+.red {
+  color: red; }
 
 .pull-right {
   float: right; }
